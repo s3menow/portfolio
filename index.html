@@ -111,6 +111,13 @@
         <section id="contact">
             <h2>Контакты</h2>
             <p>Есть задача или идея? Напишите — отвечу в течение дня.</p>
+            <form class="contact-form" action="https://formspree.io/f/xoeekevy" method="POST">
+                <label>Имя <input type="text" name="name" required placeholder="Как к вам обращаться?"></label>
+                <label>Почта <input type="email" name="email" required placeholder="you@example.com"></label>
+                <label>Сообщение <textarea name="message" rows="4" required></textarea></label>
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+            <p id="form-status" role="status"></p>
             <a class="btn" href="mailto:s3menow@gmail.com">s3menow@gmail.com</a><a class="btn alt"
                 href="https://github.com/s3menow">GitHub</a><a class="btn alt" href="https://t.me/s3menow">Telegram</a>
         </section>
