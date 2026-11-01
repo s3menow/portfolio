@@ -214,6 +214,53 @@ h2 {
     padding: 6px 14px;
 }
 
+.contact-form {
+    display: grid;
+    gap: 14px;
+    max-width: 480px;
+    margin: 16px 0 24px;
+}
+
+.contact-form label {
+    display: grid;
+    gap: 6px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font: inherit;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--text);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--accent);
+    border-color: transparent;
+}
+
+.contact-form .btn {
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+    justify-self: start;
+}
+
+#form-status {
+    color: var(--muted);
+    margin: 0 0 20px;
+}
+
+.btn:disabled {
+    opacity: .6;
+    cursor: default;
+}
+
 footer {
     padding: 32px 0 48px;
     color: var(--muted);
